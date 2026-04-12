@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2025 The Stdlib Authors.
@@ -16,23 +16,27 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
+
+import { ndarray, typedndarray } from '@stdlib/types/ndarray';
 
 /**
-* Compute the cumulative maximum value of a one-dimensional ndarray.
+* Computes the cumulative maximum value of a one-dimensional ndarray.
 *
-* @module @stdlib/stats-base-ndarray-cumax
+* @param arrays - array-like object containing an input ndarray and an output ndarray
+* @returns output ndarray
 *
 * @example
 * var ndarray2array = require( '@stdlib/ndarray-to-array' );
 * var ndarray = require( '@stdlib/ndarray-base-ctor' );
-* var cumax = require( '@stdlib/stats-base-ndarray-cumax' );
 *
 * var xbuf = [ 1.0, 3.0, 4.0, 2.0 ];
 * var x = new ndarray( 'generic', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
 *
 * var ybuf = [ 0.0, 0.0, 0.0, 0.0 ];
-* var y = new ndarray( 'generic', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
+* var y = new ndarray( 'generic', ybuf, [ 4 ], [ 1 ], 0, 'row-major' );
 *
 * var v = cumax( [ x, y ] );
 * // returns <ndarray>
@@ -43,12 +47,9 @@
 * var arr = ndarray2array( v );
 * // returns [ 1.0, 3.0, 4.0, 4.0 ]
 */
-
-// MODULES //
-
-var main = require( './main.js' );
+declare function cumax<T extends typedndarray<unknown> = typedndarray<unknown>>( arrays: [ ndarray, T ] ): T;
 
 
 // EXPORTS //
 
-module.exports = main;
+export = cumax;
