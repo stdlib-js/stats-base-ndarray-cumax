@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-04-18)
+## Unreleased (2026-05-10)
 
 <section class="commits">
 
@@ -12,6 +12,8 @@
 
 <details>
 
+-   [`1ba3724`](https://github.com/stdlib-js/stdlib/commit/1ba37246a4f68a546b4f9d126a9ce6723beaae05) - **refactor:** remove unnecessary generics _(by Athan Reines)_
+-   [`01bc5a1`](https://github.com/stdlib-js/stdlib/commit/01bc5a198b201670a4f90380696c8dd0a4f4395d) - **chore:** modernize examples and benchmarks _(by Athan Reines)_
 -   [`a19ed4c`](https://github.com/stdlib-js/stdlib/commit/a19ed4c1ebd7a8e2124665cf5b9442e7e970eb19) - **docs:** improve doctests for ndarray instances in `stats/base/ndarray/cumax` [(#11522)](https://github.com/stdlib-js/stdlib/pull/11522) _(by Uday Kakade)_
 -   [`9a51841`](https://github.com/stdlib-js/stdlib/commit/9a51841213eb13adbd6b8fe36d96c00aac9fbb17) - **bench:** refactor to use string interpolation in `stats/base` [(#11393)](https://github.com/stdlib-js/stdlib/pull/11393) _(by Karan Anand)_
 
@@ -25,8 +27,9 @@
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
+-   Athan Reines
 -   Karan Anand
 -   Uday Kakade
 
